@@ -14,20 +14,25 @@ body{
 	margin: 0;
 }
 h1, h2, h3, h4, h5, h6{
-	font-weight: 700;
+	font-weight: 400;
 	margin: 0;
 	color: #000;
-	line-height: 1em;
+	line-height: 1.2em;
 	font-family: acumin;
 }
 h1, h2{
 	font-size: 72px;
+	font-weight: 700;
+	line-height: 1em;
 }
 h1 img, h2 img{
 	height: 52px;
 }
 h3{
 	font-size: 48px;
+}
+h3 img{
+	height: 40px;
 }
 h4{
 	font-size: 30px;
@@ -61,6 +66,9 @@ p{
 	h3{
 		font-size: 40px;
 	}
+	h3 img{
+		height: 34px;
+	}
 	h4{
 		font-size: 26px;
 	}
@@ -87,6 +95,9 @@ p{
 	}
 	h3{
 		font-size: 30px;
+	}
+	h3 img{
+		height: 27px;
 	}
 	h4{
 		font-size: 22px;
@@ -126,13 +137,21 @@ p{
 
 
 
-section{
+.section{
 	position: relative;
 	display: flex;
 	align-items: center;
 	min-height: 100vh;
 	background-size: cover;
 	background-position: center;
+}
+.dark-overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #0006;
 }
 .container{
 	margin: auto;
@@ -141,6 +160,7 @@ section{
 	max-width: 1300px;
     padding-left: 30px;
     padding-right: 30px;
+    position: relative;
 }
 .col{
 	flex: 1;
@@ -164,4 +184,64 @@ section{
 }
 .logo-white .dots{
 	background-color: #a5ff00;
+}
+
+.green-btn{	
+    padding: 5px 20px;
+    border-radius: 50px;
+    color: #000;
+    background-color: #a5ff00;
+    font-size: 30px;
+    font-weight: 700;
+    border: 1px solid #a5ff00;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.green-btn img{
+    height: 38px;
+    filter: brightness(0);
+    margin-bottom: -8px;
+    margin-right: 4px;
+    transition: all 0.3s ease;
+}
+.green-btn:hover{	
+    color: #a5ff00;
+    background-color: transparent;
+}
+.green-btn:hover img{
+	filter: unset;
+}
+.transparent-btn{	
+    padding: 5px 20px;
+    border-radius: 50px;
+    color: #a5ff00;
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: 700;
+    border: 1px solid #a5ff00;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.transparent-btn img{
+    height: 30px;
+    transition: all 0.3s ease;
+    margin-bottom: -6px;
+}
+.transparent-btn:hover{
+    color: #000;
+    background-color: #a5ff00;	
+}
+.transparent-btn:hover img{
+    filter: brightness(0);	
+    transition: all 0.3s ease;
+}
+
+.section-1 h1{
+	padding-top: 80px;
+}
+.section-1 .btn-container{
+	display: flex;
+	gap: 40px;
+	padding-top: 80px;
+	justify-content: center;
 }
