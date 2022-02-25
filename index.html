@@ -25,7 +25,7 @@
 						<p class="text-center text-white mb-5">Australia's mental health is critically underfunded, leaving millions waiting years for<br>
 						treatment. Sign the petition or download our hold music to change this.</p>
 						<div class="btn-container">
-							<a href="#"><button class="green-btn"><img src="assets/sign-shape.png">SIGN</button></a>
+							<a href="#section-2"><button class="green-btn"><img src="assets/sign-shape.png">SIGN</button></a>
 							<a href="#"><button class="transparent-btn">D<img src="assets/disc-shape.png">WNLOAD</button></a>
 						</div>
 					</div>
@@ -55,5 +55,7 @@
 </html>
 
 <script type="text/javascript">
-	new fullpage('#fullpage');
+	new fullpage('#fullpage', {
+		anchors: ['section-1', 'section-2'],		
+	});
 </script>
