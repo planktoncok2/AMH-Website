@@ -46,6 +46,10 @@ h6{
 p{
 	font-size: 18px;
 	color: #000;
+	margin: 0;
+}
+a{
+	text-decoration: none;
 }
 .mb-5{
 	margin-bottom: 50px;
@@ -131,10 +135,13 @@ p{
 .text-stroke{
 	color: #000;
 	-webkit-text-fill-color: #fff; 
-	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-width: 1.5px;
 	-webkit-text-stroke-color: #000;
 }
 
+.fill-green{
+	-webkit-text-fill-color: #a5ff00; 
+}
 
 
 .section{
@@ -186,6 +193,12 @@ p{
 	background-color: #a5ff00;
 }
 
+.logo-dark{
+	color: #000;
+}
+.logo-dark .dots{
+	background-color: #000;
+}
 .green-btn{	
     padding: 5px 20px;
     border-radius: 50px;
@@ -241,6 +254,7 @@ p{
 	left: 40px;
 	top: 50%;
 	transform: translateY(-50%);
+	z-index: 9;
 }
 .menu ul{
 	display: flex;
@@ -338,4 +352,54 @@ p{
 .section-4 .container.hidden{
 	opacity: 0;
 	visibility: hidden;
+}
+
+.section-5 .img-overlay{
+	position: absolute;
+	left: 50px;
+	height: 80%;
+	top: 50%;
+	width: 60%;
+	object-fit: cover;
+	transform: translateY(-50%);
+}
+.section-5 .col{
+	max-width: 600px;
+	padding-top: 10%;
+	margin-left: auto;
+	position: relative;
+}
+.section-5 .col img{
+	position: absolute;
+    left: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+}
+
+.s5-grid{
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+	margin: 0 auto;
+    max-width: 930px;
+    padding-top: 20px;
+}
+.s5-grid .grid-item{
+	flex: 1 0 30%;
+	max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.s5-grid .grid-item img{
+	height: 90px;
+}
+.s5-grid .grid-item h4{
+	margin-bottom: 15px;
+	font-weight: 700;	
+}
+.s5-grid .grid-item p{
+	font-weight: 500;
+    max-width: 245px;
 }
