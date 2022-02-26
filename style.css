@@ -297,6 +297,13 @@ p{
 	display: flex;
 	align-items: center;
 	cursor: pointer;
+	transition: all 0.4s ease;
+	opacity: 1;
+	visibility: visible;
+}
+.pause-play.hidden{
+	opacity: 0;
+	visibility: hidden;
 }
 .play-btn{
 	position: absolute;
@@ -305,8 +312,8 @@ p{
 }
 .pause-btn{
 	position: absolute;
-	top: 10%;
-	right: 35%;	
+    top: 70%;
+    right: 65%;
 }
 .pause-play img{
 	height: 50px;
@@ -315,4 +322,14 @@ p{
 	font-weight: 700;
     font-size: 22px;
     line-height: 1em;
+}
+
+.section-4 .container{	
+	transition: all 0.4s ease; 
+	opacity: 1
+	visibility: visible;
+}
+.section-4 .container.hidden{
+	opacity: 0;
+	visibility: hidden;
 }

@@ -110,7 +110,7 @@
 						<img src="assets/play-btn.png">
 					</div>
 
-	                <div class="pause-play pause-btn">
+	                <div class="pause-play pause-btn hidden">
 						<div class="text text-white">PAUSE<br>FILM</div>
 						<img src="assets/play-btn.png">
 					</div>
@@ -134,14 +134,30 @@
 
 <script type="text/javascript">
 	new fullpage('#fullpage', {
-		anchors: ['section-1', 'section-2'],		
+		anchors: ['section-1', 'section-2', 'section-3', 'section-4'],	
+	    onLeave: function(origin, destination, direction){
+	    	if( origin.index == 3 ){
+	    		jQuery('#s4-video').trigger('pause');
+		    	jQuery('.play-btn').removeClass('hidden');
+		    	jQuery('.section-4 .container').removeClass('hidden');
+		    	jQuery('.pause-btn').addClass('hidden');
+	    	}
+	    },
+	
 	});
 	jQuery(document).ready(function ($) {
+		
 	    $('.play-btn').click(function(){
 	    	$('#s4-video').trigger('play');
+	    	$('.play-btn').addClass('hidden');
+	    	$('.section-4 .container').addClass('hidden');
+	    	$('.pause-btn').removeClass('hidden');
 	    });
 	    $('.pause-btn').click(function(){
 	    	$('#s4-video').trigger('pause');
+	    	$('.play-btn').removeClass('hidden');
+	    	$('.section-4 .container').removeClass('hidden');
+	    	$('.pause-btn').addClass('hidden');
 	    });
 	});
 </script>
