@@ -236,6 +236,23 @@ p{
     transition: all 0.3s ease;
 }
 
+.menu{
+	position: absolute;
+	left: 40px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.menu ul{
+	display: flex;
+	gap: 40px;
+	flex-direction: column;
+	padding: 0;
+	list-style: none;
+}
+.menu img{
+	width: 40px;
+}
+
 .section-1 h1{
 	padding-top: 80px;
 }
@@ -244,4 +261,58 @@ p{
 	gap: 40px;
 	padding-top: 80px;
 	justify-content: center;
+}
+
+.section-3 .img-overlay{
+	position: absolute;
+	right: 50px;
+	height: 80%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.section-3 .col{
+	max-width: 600px;
+	padding-top: 15%;
+}
+
+.video-overlay{
+	overflow: hidden;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	top: 10%;
+	bottom: 10%;
+	border-radius: 15px;
+}
+.video-overlay video{
+	position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pause-play{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.play-btn{
+	position: absolute;
+	top: 10%;
+	right: 15%;	
+}
+.pause-btn{
+	position: absolute;
+	top: 10%;
+	right: 35%;	
+}
+.pause-play img{
+	height: 50px;
+}
+.pause-play .text{
+	font-weight: 700;
+    font-size: 22px;
+    line-height: 1em;
 }

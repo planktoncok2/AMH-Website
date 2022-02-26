@@ -37,6 +37,14 @@
 					Australians for<br>
 					Mental Health<span class="dots"></span>
 				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#"><img src="assets/menu-1.png"></a></li>
+						<li><a href="#"><img src="assets/disc-shape.png"></a></li>
+						<li><a href="#"><img src="assets/menu-3.png"></a></li>
+						<li><a href="#"><img src="assets/menu-4.png"></a></li>
+					</ul>
+				</div>
 				<div class="container">
 					<div class="col">
 						<h3 class="text-white text-center">
@@ -50,6 +58,76 @@
 					</div>
 				</div>
 			</div>	
+
+			<div class="section section-3 bg-dark">
+				<div class="logo logo-white">
+					Australians for<br>
+					Mental Health<span class="dots"></span>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#"><img src="assets/menu-1.png"></a></li>
+						<li><a href="#"><img src="assets/disc-shape.png"></a></li>
+						<li><a href="#"><img src="assets/menu-3.png"></a></li>
+						<li><a href="#"><img src="assets/menu-4.png"></a></li>
+					</ul>
+				</div>
+				<img class="img-overlay" src="assets/Anthony.jpg">
+				<div class="container">
+					<div class="col">
+						<h4 class="text-white text-center mb-2">
+							"I've dealth with both Depression<br>
+							and Anxiety. I had to wait for<br>
+							proper support for around 5<br>
+							years."
+						</h4>
+						<h5 class="text-green text-center">— Anthony</h5>
+						<p style="text-align: right;"><img src="assets/o-shape-heart.png"></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="section section-4 bg-dark">
+				<div class="logo logo-white">
+					Australians for<br>
+					Mental Health<span class="dots"></span>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#"><img src="assets/menu-1.png"></a></li>
+						<li><a href="#"><img src="assets/disc-shape.png"></a></li>
+						<li><a href="#"><img src="assets/menu-3.png"></a></li>
+						<li><a href="#"><img src="assets/menu-4.png"></a></li>
+					</ul>
+				</div>
+				<div class="video-overlay">					
+					<video loop id="s4-video" preload="auto" poster="assets/video-thumbnail.jpg">
+	                    <source src="assets/sample-video.mp4" type="video/mp4">
+	                    Your browser does not support HTML5 video.
+	                </video>
+	                <div class="pause-play play-btn">
+						<div class="text text-white">PLAY<br>FILM</div>
+						<img src="assets/play-btn.png">
+					</div>
+
+	                <div class="pause-play pause-btn">
+						<div class="text text-white">PAUSE<br>FILM</div>
+						<img src="assets/play-btn.png">
+					</div>
+				</div>
+				<div class="container">
+					<div class="col">						
+						<h2 class="text-white text-center mb-5">
+							THE FIRST FREE<br>
+							LIBRARY OF HOLD MUSIC<br>
+							<span>FEAT.</span> REUBEN STYLES
+						</h2>
+						<p class="text-center text-white">Help spread the word by turning your business'<br>
+						hold music into help music.</p>
+					</div>
+				</div>
+			</div>	
+
 		</div>
 	</body>
 </html>
@@ -57,5 +135,13 @@
 <script type="text/javascript">
 	new fullpage('#fullpage', {
 		anchors: ['section-1', 'section-2'],		
+	});
+	jQuery(document).ready(function ($) {
+	    $('.play-btn').click(function(){
+	    	$('#s4-video').trigger('play');
+	    });
+	    $('.pause-btn').click(function(){
+	    	$('#s4-video').trigger('pause');
+	    });
 	});
 </script>
